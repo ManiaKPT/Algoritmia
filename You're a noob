@@ -1,0 +1,6 @@
+Public void static main () {
+
+string nick = "VinteComer";
+
+Console.WriteLine ("You're such a noob" + nick + "...");
+}
