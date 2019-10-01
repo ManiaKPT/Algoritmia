@@ -1,0 +1,12 @@
+Public void static main () {
+
+string nick = "Fuckboi";
+int level = 70;
+string race = "Forsaken";
+string gender = "Male";
+string faction = "Horde";
+string class = "Mage";
+
+Console.WriteLine ( nick \n + level \n + race \n + gender \n + faction \n + class \n);
+
+}
