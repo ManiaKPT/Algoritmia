@@ -1,0 +1,27 @@
+public void static main() {
+
+Random at1 = newRandom();
+Random def1 = newRandom();
+Random int1 = newRandom();
+
+Random at2 = newRandom();
+Random def2 = newRandom();
+Random int2 = newRandom();
+
+int mediaat;
+int mediadef;
+int mediaint;
+
+at1.Next(100);
+def1.Next(100);
+int1.Next(100);
+
+at2.Next(100);
+def2.Next(100);
+int2.Next(100);
+
+mediaat = at1 + at2 /2;
+mediadef = def1 + def2 /2;
+mediaint = int1 + int2 /2;
+
+}
