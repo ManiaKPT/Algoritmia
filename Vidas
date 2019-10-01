@@ -1,0 +1,7 @@
+public void static main () {
+
+int vidas = 3;
+
+Console.WriteLine ("You have" + vidas + "lives, use them wisely");
+
+}
