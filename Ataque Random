@@ -1,0 +1,11 @@
+public void static manin () {
+
+int vida =100;
+Random r = newRandom();
+Random r1 = newRandom();
+int r2 = 0;
+
+r.Next(40);
+r1.Next(40);
+r2 = 99 - r - r1;
+vida-= r + + r1 + r2;
