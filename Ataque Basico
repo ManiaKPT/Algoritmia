@@ -1,0 +1,10 @@
+public void static main () {
+
+int vida = 100;
+int ataque = 100;
+vida = vida - ataque;
+
+if (vida ==0) {
+Console.WriteLine("GG");
+
+}
