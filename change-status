@@ -1,0 +1,11 @@
+public void static main () {
+
+  string Start = "Game Started";
+  string Playing = "Game Playing";
+  string Over = "Game Over";
+  
+  console.writeLine(Start);
+  console.writeLine(Playing);
+  console.writeLine(Over);
+  
+  }
