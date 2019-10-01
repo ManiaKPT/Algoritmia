@@ -4,8 +4,8 @@ public void static main () {
   string Playing = "Game Playing";
   string Over = "Game Over";
   
-  console.writeLine(Start);
-  console.writeLine(Playing);
-  console.writeLine(Over);
+  Console.WriteLine(Start);
+  Console.WriteLine(Playing);
+  Console.WriteLine(Over);
   
   }
