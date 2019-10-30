@@ -1,27 +1,38 @@
-public void static main() {
+using System;
 
-Random at1 = newRandom();
-Random def1 = newRandom();
-Random int1 = newRandom();
+class MainClass {
+  public static void Main () {
+    
+    int attack1 = 360;
+    int defense1 = 190;
+    int intellect1 = 160;
 
-Random at2 = newRandom();
-Random def2 = newRandom();
-Random int2 = newRandom();
+    int attack2 = 130;
+    int defense2 = 215;
+    int intellect2 = 300;
 
-int mediaat;
-int mediadef;
-int mediaint;
 
-at1.Next(100);
-def1.Next(100);
-int1.Next(100);
+    Console.WriteLine ("~~~~Char 1 Stats~~~~");
+    Console.WriteLine (
+      "\n Attack: " +attack1+ 
+      "\n Defense: " +defense1+ 
+      "\n Intellect: " +intellect1);
 
-at2.Next(100);
-def2.Next(100);
-int2.Next(100);
+    Console.WriteLine("");
 
-mediaat = at1 + at2 /2;
-mediadef = def1 + def2 /2;
-mediaint = int1 + int2 /2;
+    Console.WriteLine ("~~~~Char 2 Stats~~~~");
+    Console.WriteLine (
+      "\n Attack: " +attack2+ 
+      "\n Defense: " +defense2+ 
+      "\n Intellect: " +intellect2);
 
+      Console.WriteLine("");
+
+      Console.WriteLine("~~~~Char Fusion Stats~~~~");
+      Console.WriteLine (
+      "\n Attack: " +(attack1+attack2/2)+ 
+      "\n Defense: " +(defense1+defense2/2)+
+      "\n Intellect: " +(intellect1+intellect2/2));
+    
+  }
 }
