@@ -1,0 +1,24 @@
+using System;
+
+class MainClass {
+  public static void Main () {
+    
+   Random r = new Random () ;
+  int v1 ,v2;
+
+  v1 = r.Next (1,7);
+  v2 = r.Next (1,7);
+
+  Console.WriteLine (v1);
+  Console.WriteLine (v2);
+    
+  if (v1>v2) {
+    Console.WriteLine ("Player 1 Wins");
+  }  
+  else if (v2>v1) 
+  Console.WriteLine ("Player 2 Wins");
+
+  else
+  Console.WriteLine ("It's a draw");
+  }
+}
