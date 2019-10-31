@@ -1,0 +1,71 @@
+using System;
+
+class MainClass {
+  public static void Main () {
+    
+   Random r = new Random () ;
+  int x1, y1, x2, y2;
+  string P1LocationY ,P1LocationX, P2LocationY,P2LocationX;
+  bool warning = false;
+
+  x1 = r.Next (1,500);
+  y1 = r.Next (1,500);
+
+  x2 = r.Next (1,500);
+  y2 = r.Next (1,500);  
+
+      //if for Player1 Location
+
+      if (y1 > 250) {
+        P1LocationY = "Bottom";
+      }  else {
+        P1LocationY = "Top";
+      }
+
+      if (x1 > 250) {
+        P1LocationX = "Right";
+      } else {
+        P1LocationX = "Left";
+      }
+
+      Console.WriteLine(+x1+ " " +y1);
+      Console.WriteLine("Player 1 is on " +P1LocationY+ " " +P1LocationX);
+
+    //if for Player2 Location
+
+      if (y2 > 250) {
+        P2LocationY = "Bottom";
+      }  else {
+        P2LocationY = "Top";
+      }
+
+      if (x2 > 250) {
+        P2LocationX = "Right";
+      } else {
+        P2LocationX = "Left";
+      }
+
+      Console.WriteLine(+x2+ " " +y2);
+      Console.WriteLine("Player 2 is on " +P2LocationY+ " " +P2LocationX);
+
+//if in case the 1st value is bigger than the first 
+
+    if (x1-x2<=20)
+    {
+      if (y1-y2 <= 20)
+      {
+        warning = true;
+      }
+    }
+
+//if in case the 1st value is smaller than the first
+
+    if (x2-x1<=20)
+    {
+      if (y2-y1 <= 20 && warning == true)
+      {
+        Console.WriteLine("Player 2 ran away");
+      }
+    }
+  }
+}
