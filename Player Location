@@ -1,0 +1,28 @@
+using System;
+
+class MainClass {
+  public static void Main () {
+    
+   Random r = new Random () ;
+  int x ,y;
+  string p1 , p2;
+
+  x = r.Next (1,500);
+  y = r.Next (1,500);
+    
+  if (y > 250) {
+    p1 = "Bottom";
+  }  else {
+  p1 = "Top";
+  }
+
+  if (x > 250) {
+    p2 = "Right";
+  } else {
+  p2 = "Left";
+  }
+
+  Console.WriteLine(+x+ " " +y);
+  Console.WriteLine("Player is on " +p1+ " " +p2);
+  }
+}
