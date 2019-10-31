@@ -1,0 +1,14 @@
+using System;
+
+class MainClass {
+  public static void Main () {
+    
+    int attack = 100;
+    int percent = 150;
+    int powerUp = (attack * percent) / 100;
+    
+    attack += powerUp;
+    Console.WriteLine(attack);
+    
+  }
+}
