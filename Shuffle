@@ -1,0 +1,33 @@
+using System;
+
+class MainClass {
+  public static void Main () 
+  {
+   Random r = new Random();
+   int [] cartas = new int [53] ;
+
+Console.WriteLine("Deck Organizado:\n");
+
+   for (int i = 0; i < cartas.Length; i++ )
+   {
+     cartas[i] = i+1;
+     Console.WriteLine
+      (
+       i + 1 + "º - " +  cartas[i]
+      );
+    }
+Console.WriteLine("\n Deck Shuffled:\n");
+
+          for (int j = 0; j < cartas.Length; j++)
+        {
+            int y = r.Next(j, cartas.Length);
+            int temp  = cartas[j];
+            cartas[j] = cartas[y];
+            cartas[y] = temp;
+            Console.WriteLine
+            (
+              j + 1 + "º - " +  cartas[j]
+            );
+        }
+    }
+}
